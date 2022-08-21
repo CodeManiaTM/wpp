@@ -27,9 +27,11 @@
 // Datatypes
 #define WAYTOODANK void
 #define speed int
+#define CODDERS float
 
 // Stream operators
 #define peepoPing <<
+#define peepoD >>
 
 // Values
 #define NODDERS true
@@ -38,7 +40,14 @@
 // Operators
 #define Pog(v) v++
 #define Nog(v) v--
-#define PETTHEMOD %
+#define PETTHEMOD(a, b) (a % b)
+#define YEP(a, b) (a == b)
+#define NOP(a, b) (a != b)
+#define less(a, b) (a < b)
+#define loe(a, b) (a <= b)
+#define greater(a, b) (a > b)
+#define goe(a, b) (a >= b)
+#define WaitWhat(expr, a, b) (expr ? a : b)
 
 // Access Specifiers
 #define GIGASHY private
