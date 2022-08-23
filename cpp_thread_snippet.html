@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="The longest Twitch Thread [ Archive from Twitch.TV/Wirtual ]">
+	<base href="https://www.twitch.tv/wirtual">
+	<title>Wirtual C++ Thread 48h+</title>
+	<!-- small cencored snipped of the archive by @8 -->
+	<!-- Thread started on 2022-08-19 02:29 (CEST) with @0 -->
+	<style>
+		body {
+			background-color: #000;
+			color-scheme: dark;
+			color: #fff;
+			font-size: 13px;
+			line-height: 19.5px;
+			font-family: Inter, Roobert, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		.chat_line {
+			display: grid;
+			grid-template-columns: 3em 2em 1em auto;
+			justify-content: start;
+			align-items: baseline;
+			background-color: #222;
+		}
+		.chat_line:nth-child(odd) {background-color: #111;}
+		.chat_line>span.timestamp {color: #777;}
+		.chat_line>span.username {
+			/* color:var(--color_light); */
+			color: var(--color_dark);
+		}
+		.chat_line>span.message {word-wrap: break-word;}
+		.chat_line>span.message>img {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.chat_line>span.message>img {height: 28px;}
+		.chat_line>span.message>strong.text {color: #afa;}
+		.chat_line>span.message.deleted {color: #aaa;}
+		.chat_line>span.message>img.emote {
+			height: 2em;
+			vertical-align: middle;
+		}
+		.bar_missing_messages,.bar_new_messages {text-align: center;}
+		.bar_missing_messages {background-color: #800;}
+		.bar_new_messages {background-color: #040;}
+		#headline>.chat_line {
+			display: inline-block;
+			background-color: initial;
+			width: max-content;
+		}
+		#page {
+			position: fixed;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			left: 50%;
+			width: 99vw;
+			height: 99vh;
+			overflow: overlay;
+		}
+		 ::-webkit-scrollbar {
+			width: 1.2rem;
+			height: 1.2rem;
+		}
+		 ::-webkit-scrollbar-thumb:window-inactive {border-color: #040F!important;}
+		 ::-webkit-scrollbar-thumb:vertical {
+			background-color: #0000;
+			border-right: .5rem solid #080F;
+			border-radius: 0;
+		}
+		 ::-webkit-scrollbar-thumb:vertical:hover {
+			background-color: #0F0F;
+			border: none;
+			border-top-left-radius: 1rem;
+			border-bottom-left-radius: 1rem;
+		}
+		 ::-webkit-scrollbar-thumb:horizontal {
+			background-color: #0000;
+			border-bottom: .5rem solid #080F;
+			border-radius: 0;
+		}
+		 ::-webkit-scrollbar-thumb:horizontal:hover {
+			background-color: #0F0F;
+			border: none;
+			border-top-left-radius: 1rem;
+			border-top-right-radius: 1rem;
+		}
+		 ::-webkit-scrollbar-track {
+			display: none;
+			background-color: #0000;
+		}
+		 ::-webkit-scrollbar-track-piece {
+			display: none;
+			background-color: #0000;
+		}
+		 ::-webkit-scrollbar-corner {
+			display: none;
+			background-color: #0000;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div id="headline">
+			<h1>THE C++ Thread on <a href="https://www.twitch.tv/wirtual" target="_blank" rel="noopener noreferrer" title="Twitch.TV/Wirtual">Twitch.tv/Wirtual</a></h1>
+			<h6>The original chatter names have been censored.</h6>
+			<h3>
+				<div class="chat_line">
+					<span class="timestamp">2:29</span>
+					<span class="username" style="--color_light:rgb(0, 49, 83);--color_dark:rgb(28, 161, 255);">0</span>
+					<span class="colon">: </span>
+					<span class="message">
+						<span class="text">What about C++? </span>
+						<img class="emote" src="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/3.0 4x" alt="Kappa" data-provider="twitch" data-id="25">
+					</span>
+				</div>
+			</h3>
+		</div>
+		<div id="chat_list">
+			<div class="bar_missing_messages">MISSING MESSAGES HERE</div>
+			<div class="chat_line"><span class="timestamp">21:42</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">we should design a programming language inspired by this chat</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/243681/1" srcset="//cdn.frankerfacez.com/emote/243681/1 1x, //cdn.frankerfacez.com/emote/243681/2 2x, //cdn.frankerfacez.com/emote/243681/4 4x" alt="monkaChrist" data-tooltip-type="emote" data-provider="ffz" data-id="243681" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:43</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">3</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">W++</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/3.0 4x" alt="Kappa" data-tooltip-type="emote" data-provider="twitch" data-id="25"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">W++ </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span><span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">6</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">W++ </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">It will understand ++ as += 2, so yes. It can do multi passes </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:43</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">W++ </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:44</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">W++ </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:44</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">W++ will be a thing. I'm going to work on a spec and post it into the discord as a draft. It just has to become a thing </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:44</span>
+				<span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">9</span><span class="colon">: </span>
+				<span class="message "><img src="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/25/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/25/default/dark/3.0 4x" alt="Kappa" data-tooltip-type="emote" data-provider="twitch" data-id="25"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:44</span>
+				<span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">10</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">++ is like --, it becomes a negative</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:45</span>
+				<span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">9</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/5f1b0186cf6d2144653d2970/1x" srcset="https://cdn.betterttv.net/emote/5f1b0186cf6d2144653d2970/1x 1x, https://cdn.betterttv.net/emote/5f1b0186cf6d2144653d2970/2x 2x, https://cdn.betterttv.net/emote/5f1b0186cf6d2144653d2970/3x 4x" alt="catJAM" data-tooltip-type="emote" data-provider="ffz" data-id="5f1b0186cf6d2144653d2970" data-set="addon--ffzap.betterttv--channel-92271663"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:45</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:46</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">there should be a C++ on the discord</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:46</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@4</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/3.0 4x" alt="LUL" data-tooltip-type="emote" data-provider="twitch" data-id="425618"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:46</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I think W++ shuld be inspired by C++ atleast</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:47</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"><span class="text" data-a-target="chat-message-text"> it´s have to be better then Lua</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:47</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@7</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:48</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@4</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/425618/default/dark/3.0 4x" alt="LUL" data-tooltip-type="emote" data-provider="twitch" data-id="425618"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:48</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/555555589/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/555555589/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/555555589/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/555555589/default/dark/3.0 4x" alt=";)" data-tooltip-type="emote" data-provider="twitch" data-id="555555589"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:48</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:49</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/5c0e1a3c6c146e7be4ff5c0c/1x" srcset="https://cdn.betterttv.net/emote/5c0e1a3c6c146e7be4ff5c0c/1x 1x, https://cdn.betterttv.net/emote/5c0e1a3c6c146e7be4ff5c0c/2x 2x, https://cdn.betterttv.net/emote/5c0e1a3c6c146e7be4ff5c0c/3x 4x" alt="peepoHey" data-tooltip-type="emote" data-provider="ffz" data-id="5c0e1a3c6c146e7be4ff5c0c" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> will be the entrypoint and </span>
+				<span class="text" data-a-target="chat-message-text"> will be the return keyword</span>
+				</span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:49</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/464591/1" srcset="//cdn.frankerfacez.com/emote/464591/1 1x, //cdn.frankerfacez.com/emote/464591/2 2x, //cdn.frankerfacez.com/emote/464591/4 4x" alt="PauseFish" data-tooltip-type="emote" data-provider="ffz" data-id="464591" data-set="113107"><span class="text" data-a-target="chat-message-text"> sleep?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:50</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">Yes</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:50</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">#define true </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:50</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">#define false </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:50</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">no random, W++ will be deterministic</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:50</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/218530/1" srcset="//cdn.frankerfacez.com/emote/218530/1 1x, //cdn.frankerfacez.com/emote/218530/2 2x, //cdn.frankerfacez.com/emote/218530/4 4x" alt="PepoG" data-tooltip-type="emote" data-provider="ffz" data-id="218530" data-set="113107"><span class="text" data-a-target="chat-message-text"> to save something in an text file?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:51</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">That's a good one, too</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:51</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/218530/1" srcset="//cdn.frankerfacez.com/emote/218530/1 1x, //cdn.frankerfacez.com/emote/218530/2 2x, //cdn.frankerfacez.com/emote/218530/4 4x" alt="PepoG" data-tooltip-type="emote" data-provider="ffz" data-id="218530" data-set="113107"><span class="text" data-a-target="chat-message-text"> should be stdout, change my mind</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:51</span><span class="username" style="--color_light:rgb(199, 219, 31);--color_dark:rgb(199, 219, 31);">12</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">you know, java and javascript support emoji variable names</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:52</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><strong class="text">@11</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:52</span>
+				<span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">13</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">esoteric programming languages noone's talking about be like </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:52</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/563443/1" srcset="//cdn.frankerfacez.com/emote/563443/1 1x, //cdn.frankerfacez.com/emote/563443/2 2x, //cdn.frankerfacez.com/emote/563443/4 4x" alt="COPIUM" data-tooltip-type="emote" data-provider="ffz" data-id="563443" data-set="113107"><span class="text" data-a-target="chat-message-text"> is your random integer xD</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:52</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span><span class="message "><strong class="text">@13</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:52</span>
+				<span class="username" style="--color_light:rgb(154, 205, 50);--color_dark:rgb(154, 205, 50);">15</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">ratio</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:52</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">to make it look cool it'll also need bttv/7tv integration</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:52</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">16</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">ASSIST</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:52</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/425196/1" srcset="//cdn.frankerfacez.com/emote/425196/1 1x, //cdn.frankerfacez.com/emote/425196/2 2x, //cdn.frankerfacez.com/emote/425196/4 4x" alt="Sadge" data-tooltip-type="emote" data-provider="ffz" data-id="425196" data-set="113107"><span class="text" data-a-target="chat-message-text"> has to be catch</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:53</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">for the editors</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:53</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@2</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:53</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">17</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">judging by unoptimized TrackMania is, I'd guess it is writtin in C++</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:53</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:53</span>
+				<span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">13</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">tmnf is actually written in c++</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:53</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/563443/1" srcset="//cdn.frankerfacez.com/emote/563443/1 1x, //cdn.frankerfacez.com/emote/563443/2 2x, //cdn.frankerfacez.com/emote/563443/4 4x" alt="COPIUM" data-tooltip-type="emote" data-provider="ffz" data-id="563443" data-set="113107"><span class="text" data-a-target="chat-message-text"> try </span>
+				<span class="text" data-a-target="chat-message-text"> catch. </span>
+				</span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:54</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">I'm literally using notepad right now as that </span><span class="text" data-a-target="chat-message-text"> </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:54</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">old school, i like it</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:54</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">perfect </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:54</span>
+				<span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">9</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:54</span>
+				<span class="username" style="--color_light:rgb(178, 34, 34);--color_dark:rgb(224, 91, 91);">18</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:54</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"><span class="text" data-a-target="chat-message-text"> we need something for a for loop</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:55</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/5ab6f0ece1d6391b63498774/1x" srcset="https://cdn.betterttv.net/emote/5ab6f0ece1d6391b63498774/1x 1x, https://cdn.betterttv.net/emote/5ab6f0ece1d6391b63498774/2x 2x, https://cdn.betterttv.net/emote/5ab6f0ece1d6391b63498774/3x 4x" alt="COGGERS" data-tooltip-type="emote" data-provider="ffz" data-id="5ab6f0ece1d6391b63498774" data-set="addon--ffzap.betterttv--channel-92271663"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:55</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Does anybody know about programming languages/compilers though? I don't want it to end like php</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:55</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I actually know the theory. We just need an AST and pass that to LLVM so we have a natively compiling language</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:55</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><strong class="text">@4</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:55</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">19</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">ITS C++</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:55</span><span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">20</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">how is this real</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:56</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span> <span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/emotesv2_e06b8735fa48437fbec91885e8858557/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/emotesv2_e06b8735fa48437fbec91885e8858557/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/emotesv2_e06b8735fa48437fbec91885e8858557/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/emotesv2_e06b8735fa48437fbec91885e8858557/default/dark/3.0 4x" alt="wirtHomi" data-tooltip-type="emote" data-provider="twitch" data-id="emotesv2_e06b8735fa48437fbec91885e8858557"><span class="text" data-a-target="chat-message-text"> is to declare a child class </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:56</span><span class="username" style="--color_light:rgb(0, 255, 127);--color_dark:rgb(0, 255, 127);">21</span> <span class="colon">: </span><span class="message "><strong class="text">@2</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:56</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:56</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">php ended on version 3 of course</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:57</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">22</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">wait, is chat creating its own language??</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:57</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Alright, everything noted so far. What do y'all think of </span><span class="text" data-a-target="chat-message-text"> for loops?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:57</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><strong class="text">@21</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"><span class="text" data-a-target="chat-message-text"> Inventor himself said he haid no clue about how to write a programming language</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:57</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">I just joined the discord and waiting for a C++ channel for this thread </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:57</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/1x" srcset="https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/1x 1x, https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/2x 2x, https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/3x 4x" alt="NODDERS" data-tooltip-type="emote" data-provider="ffz" data-id="5eadf40074046462f7687d0f" data-set="addon--ffzap.betterttv--channel-92271663"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:57</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span> <span class="colon">: </span><span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:57</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">23</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">if you search online Kaleidoscope: Implementing a Language with LLVM. you have all the tools to build a new language. A little warning building an llvm version takes 40 gb of memory</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:58</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">what about conditional code?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:58</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">holy heck, well I don't have that right now, good to know. Let's see if the CI/CD runners can keep up with that then </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:58</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">i can compile it on my ubuntu server if needed, should have roughly 40-45GB free memory atm </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:59</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">if/else is tough, I have been thinking about that one for a while</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:59</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">3</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/6201c76c06fd6a9f5be3c361/1x" srcset="https://cdn.betterttv.net/emote/6201c76c06fd6a9f5be3c361/1x 1x, https://cdn.betterttv.net/emote/6201c76c06fd6a9f5be3c361/2x 2x, https://cdn.betterttv.net/emote/6201c76c06fd6a9f5be3c361/3x 4x" alt="Aware" data-tooltip-type="emote" data-provider="ffz" data-id="6201c76c06fd6a9f5be3c361" data-set="addon--ffzap.betterttv--channel-92271663"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:59</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">We could use LLVM or GraalVM. GraalVM is really easy to get started with a custom language</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">21:59</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span> <span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//static-cdn.jtvnw.net/emoticons/v2/emotesv2_3300bc026f7c42ee88c5bfe7edd45b24/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/emotesv2_3300bc026f7c42ee88c5bfe7edd45b24/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/emotesv2_3300bc026f7c42ee88c5bfe7edd45b24/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/emotesv2_3300bc026f7c42ee88c5bfe7edd45b24/default/dark/3.0 4x" alt="wirtPal" data-tooltip-type="emote" data-provider="twitch" data-id="emotesv2_3300bc026f7c42ee88c5bfe7edd45b24"><span class="text" data-a-target="chat-message-text"> for an microtransaction template </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">21:59</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">maybe pepePoint for the case in switch case</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:00</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">maybe something like believers/doubters for if/else</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:00</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@24</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:00</span>
+				<span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">13</span><span class="colon">: </span> <span class="message "><strong class="text">@24</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:00</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">
+						<span class="bttv-message-container">believers <img src="https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/1x" srcset="https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/2x 2x, https://cdn.betterttv.net/emote/5eadf40074046462f7687d0f/3x 4x" alt="NODDERS" class="chat-line__message--emote bttv-emote-image"> doubters <img src="https://cdn.betterttv.net/emote/5ec39a9db289582eef76f733/1x" srcset="https://cdn.betterttv.net/emote/5ec39a9db289582eef76f733/2x 2x, https://cdn.betterttv.net/emote/5ec39a9db289582eef76f733/3x 4x" alt="NOPERS" class="chat-line__message--emote bttv-emote-image"> </span>
+				</span>
+				</span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:01</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">that already true false</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:01</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">do we want to limit our emotes to wirtuals channel? Otherwise I'd like chatting for user input</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:01</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">do we want something special for else if or is it going to be believers doubters (condition)?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:01</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:02</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">that sounds good, too </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:02</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">we could use </span><span class="text" data-a-target="chat-message-text"> for if/else maybe and then </span><img src="//cdn.frankerfacez.com/emote/289028/1" srcset="//cdn.frankerfacez.com/emote/289028/1 1x, //cdn.frankerfacez.com/emote/289028/2 2x"
+					alt="Nog" data-tooltip-type="emote" data-provider="ffz" data-id="289028" data-set="113107"><span class="text" data-a-target="chat-message-text"> for the branches</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:03</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/557676/1" srcset="//cdn.frankerfacez.com/emote/557676/1 1x, //cdn.frankerfacez.com/emote/557676/2 2x, //cdn.frankerfacez.com/emote/557676/4 4x" alt="PauseChamp" data-tooltip-type="emote" data-provider="ffz" data-id="557676" data-set="113107"><span class="text" data-a-target="chat-message-text"> could also be used for sleep/await</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:03</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">or maybe ignore else if and do it boomer style </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:03</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"><span class="text" data-a-target="chat-message-text"> could maybe be a good exception type</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:04</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"><span class="text" data-a-target="chat-message-text"> as seg fault</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:04</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/563443/1" srcset="//cdn.frankerfacez.com/emote/563443/1 1x, //cdn.frankerfacez.com/emote/563443/2 2x, //cdn.frankerfacez.com/emote/563443/4 4x" alt="COPIUM" data-tooltip-type="emote" data-provider="ffz" data-id="563443" data-set="113107"><span class="text" data-a-target="chat-message-text"> someMethodCall() </span>
+				<span class="text" data-a-target="chat-message-text">
+					<span class="bttv-message-container"><img src="https://cdn.betterttv.net/frankerfacez_emote/381875/1" srcset="https://cdn.betterttv.net/frankerfacez_emote/381875/2 2x, https://cdn.betterttv.net/frankerfacez_emote/381875/4 4x" alt="KEKW" class="chat-line__message--emote bttv-emote-image"> ex) - i live for this</span>
+				</span>
+				</span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:04</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">" </span><span class="text" data-a-target="chat-message-text"> (Core dumped) " </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:05</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">any crash just has to be prefixed with </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:05</span>
+				<span class="username" style="--color_light:rgb(0, 255, 127);--color_dark:rgb(0, 255, 127);">25</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">u guys do realise threads have limits right??? we cant see back to the start</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:05</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">someMethodCall </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:05</span><span class="username" style="--color_light:rgb(255, 127, 80);--color_dark:rgb(255, 127, 80);">26</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">why do we need to see to the start of the thread</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:05</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/6083732039b5010444d051e8/1x" srcset="https://cdn.betterttv.net/emote/6083732039b5010444d051e8/1x 1x, https://cdn.betterttv.net/emote/6083732039b5010444d051e8/2x 2x, https://cdn.betterttv.net/emote/6083732039b5010444d051e8/3x 4x" alt="DinkDonk" data-tooltip-type="emote" data-provider="ffz" data-id="6083732039b5010444d051e8" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> would be great for subscribe/notify design pattern</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:05</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">actually reverse it like an asm CALL addr: </span><span class="text" data-a-target="chat-message-text"> functionName</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:06</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">both great ideas</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:07</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">So, are we going oop style, or functional?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:07</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">I archive the HTML of this thread regularly no worries</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:08</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">19</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">try java</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:08</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">27</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@8</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:08</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">hot take idea: wouldn't making an assembly-style eso lang be easier to interpret </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:08</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span> <span class="message "><strong class="text">@8</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:08</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:08</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:09</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span> <span class="colon">: </span><span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:09</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">functional is cool but it also hurts my brain, i vote for oop</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:09</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">oop</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:09</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">oop it is</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:09</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">why not both? just use scala </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:10</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Just lambda everything </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:10</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">why not a functional language like Haskell </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:10</span><span class="username" style="--color_light:rgb(95, 158, 160);--color_dark:rgb(95, 158, 160);">29</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">It's Prolog time</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:10</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">30</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">I have no idea what you guys are talking about, but I read scala, and I just gotta chime in and say: no.</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:10</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">i mean you guys could literally define </span><span class="text" data-a-target="chat-message-text"> as a method with scala using infix</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:11</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">OOP may be a bit difficult to begin with, so a simple procedure language could be a start</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:11</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">31</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">C# is a good language </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:12</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">^ i feel like aiming for the sun might give us an icarus situation </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:12</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@7</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:12</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">2</span> <span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/214681/1" srcset="//cdn.frankerfacez.com/emote/214681/1 1x, //cdn.frankerfacez.com/emote/214681/2 2x, //cdn.frankerfacez.com/emote/214681/4 4x" alt="monkaW" data-tooltip-type="emote" data-provider="ffz" data-id="214681" data-set="113107"><span class="text" data-a-target="chat-message-text"> keep it alive</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:12</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Also I feel that </span><span class="text" data-a-target="chat-message-text"> would be better as a try than </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:12</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">agreed</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:12</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">true</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:13</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">what keyword to throw exceptions?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:13</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/507766/1" srcset="//cdn.frankerfacez.com/emote/507766/1 1x, //cdn.frankerfacez.com/emote/507766/2 2x, //cdn.frankerfacez.com/emote/507766/4 4x" alt="Prayge" data-tooltip-type="emote" data-provider="ffz" data-id="507766" data-set="113107"><span class="text" data-a-target="chat-message-text"> { } </span>
+				<span class="text" data-a-target="chat-message-text"> ( </span><span class="text" data-a-target="chat-message-text"> ex ) {}</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:13</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">32</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">Are you guys trying to create a new language based on wirtual ?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:13</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">Throwing? Wirtual</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:13</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/507766/1" srcset="//cdn.frankerfacez.com/emote/507766/1 1x, //cdn.frankerfacez.com/emote/507766/2 2x, //cdn.frankerfacez.com/emote/507766/4 4x" alt="Prayge" data-tooltip-type="emote" data-provider="ffz" data-id="507766" data-set="113107"><span class="text" data-a-target="chat-message-text"> exec() </span>
+				<span class="text" data-a-target="chat-message-text"> print(error)</span>
+				</span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:14</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/510861/1" srcset="//cdn.frankerfacez.com/emote/510861/1 1x, //cdn.frankerfacez.com/emote/510861/2 2x, //cdn.frankerfacez.com/emote/510861/4 4x" alt="Madge" data-tooltip-type="emote" data-provider="ffz" data-id="510861" data-set="113107"><span class="text" data-a-target="chat-message-text"> for throw maybe?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:14</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><strong class="text">@1</strong><img src="//cdn.frankerfacez.com/emote/407009/1" srcset="//cdn.frankerfacez.com/emote/407009/1 1x, //cdn.frankerfacez.com/emote/407009/2 2x, //cdn.frankerfacez.com/emote/407009/4 4x" alt="KEKL" data-tooltip-type="emote" data-provider="ffz" data-id="407009" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:14</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">Also an idea</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:14</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">Virtual for throw</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:15</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">for final maybe</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:15</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">i tried </span><span class="text" data-a-target="chat-message-text"> for catch because of </span><span class="text" data-a-target="chat-message-text"> POLE</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:15</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/418189/1" srcset="//cdn.frankerfacez.com/emote/418189/1 1x, //cdn.frankerfacez.com/emote/418189/2 2x, //cdn.frankerfacez.com/emote/418189/4 4x" alt="YEP" data-tooltip-type="emote" data-provider="ffz" data-id="418189" data-set="113107"><span class="text" data-a-target="chat-message-text"> is an idea for catch, compared to </span>
+				<span class="text" data-a-target="chat-message-text"> what do you guys think?</span>
+				</span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:15</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">if could also maybe be peepoShy, just a thought</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:16</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/425196/1" srcset="//cdn.frankerfacez.com/emote/425196/1 1x, //cdn.frankerfacez.com/emote/425196/2 2x, //cdn.frankerfacez.com/emote/425196/4 4x" alt="Sadge" data-tooltip-type="emote" data-provider="ffz" data-id="425196" data-set="113107"><span class="text" data-a-target="chat-message-text"> better for catch imo</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:16</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span> <span class="colon">: </span><span class="message "><strong class="text">@5</strong></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:16</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">i feel like catch is more of a no or a fail so </span><span class="text" data-a-target="chat-message-text"> is more descriptive of the actual functionality imho</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:16</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/611b0c7676ea4e2b9f77a838/1x" srcset="https://cdn.betterttv.net/emote/611b0c7676ea4e2b9f77a838/1x 1x, https://cdn.betterttv.net/emote/611b0c7676ea4e2b9f77a838/2x 2x, https://cdn.betterttv.net/emote/611b0c7676ea4e2b9f77a838/3x 4x" alt="peepoShy" data-tooltip-type="emote" data-provider="ffz" data-id="611b0c7676ea4e2b9f77a838" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> but only in emote form</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:16</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/243789/1" srcset="//cdn.frankerfacez.com/emote/243789/1 1x, //cdn.frankerfacez.com/emote/243789/2 2x, //cdn.frankerfacez.com/emote/243789/4 4x" alt="Pepega" data-tooltip-type="emote" data-provider="ffz" data-id="243789" data-set="113107"><span class="text" data-a-target="chat-message-text"> needs to be used somehow</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:16</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">32</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">sadge is better or use the complete yep pole</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:17</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/243789/1" srcset="//cdn.frankerfacez.com/emote/243789/1 1x, //cdn.frankerfacez.com/emote/243789/2 2x, //cdn.frankerfacez.com/emote/243789/4 4x" alt="Pepega" data-tooltip-type="emote" data-provider="ffz" data-id="243789" data-set="113107"><span class="text" data-a-target="chat-message-text"> could be a nullptr maybe</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:17</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">winke to define a class</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:17</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/243789/1" srcset="//cdn.frankerfacez.com/emote/243789/1 1x, //cdn.frankerfacez.com/emote/243789/2 2x, //cdn.frankerfacez.com/emote/243789/4 4x" alt="Pepega" data-tooltip-type="emote" data-provider="ffz" data-id="243789" data-set="113107"><span class="text" data-a-target="chat-message-text"> for constants and </span>
+				<span class="text" data-a-target="chat-message-text"> for variables?</span>
+				</span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:18</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">maybe </span><span class="text" data-a-target="chat-message-text"> for private variables because they don't want to be in public</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:18</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">that's a solid idea</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:18</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">that's good, </span><span class="text" data-a-target="chat-message-text"> void Foo()</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:19</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/1x" srcset="https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/1x 1x, https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/2x 2x, https://cdn.betterttv.net/emote/5d7eefb7c0652668c9e4d394/3x 4x" alt="modCheck" data-tooltip-type="emote" data-provider="ffz" data-id="5d7eefb7c0652668c9e4d394" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> for protected</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:19</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">this is going to be the best language</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:19</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">maybe </span><span class="text" data-a-target="chat-message-text"> for public variables then and </span><span class="text" data-a-target="chat-message-text"> for nulls?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:19</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/1x" srcset="https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/1x 1x, https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/2x 2x, https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/3x 4x" alt="GIGACHAD" data-tooltip-type="emote" data-provider="ffz" data-id="620a9e6b06fd6a9f5be4842d" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> for public and </span>
+				<span class="text" data-a-target="chat-message-text"> for protected ?</span>
+				</span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:20</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">only problem with this language is that developers using it would laughing all the time</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:20</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">better than crying</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:20</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">sounds like a feature</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:20</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">that's good, I'm usually crying when coding</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:20</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">no the humour will run out fast, you have to be afraid of Chatting and not laughing though</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:21</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">24</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">we will cry when compiler will </span><span class="text" data-a-target="chat-message-text"> us</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:21</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><img src="https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/1x" srcset="https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/1x 1x, https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/2x 2x, https://cdn.betterttv.net/emote/620a9e6b06fd6a9f5be4842d/3x 4x" alt="GIGACHAD" data-tooltip-type="emote" data-provider="ffz" data-id="620a9e6b06fd6a9f5be4842d" data-set="addon--ffzap.betterttv--channel-92271663"><span class="text" data-a-target="chat-message-text"> for public and </span>
+				<span class="text" data-a-target="chat-message-text"> for private sounds good, then we can use </span><span class="text" data-a-target="chat-message-text"> for variables. That one looks more like a "gimme" to me</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:21</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">oh god, when would Chatting be used </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:21</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">23</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">if we want just to change the keywords, we can still use c++ and create an header with a lot of define</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:21</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@24</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:21</span><span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">35</span> <span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">how about some phyton for a chance</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:21</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">if it would be like c# with unsafe blocks, we could use </span><span class="text" data-a-target="chat-message-text"> for those</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:22</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">36</span>
+				<span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/457124/1" srcset="//cdn.frankerfacez.com/emote/457124/1 1x, //cdn.frankerfacez.com/emote/457124/2 2x, //cdn.frankerfacez.com/emote/457124/4 4x" alt="WICKED" data-tooltip-type="emote" data-provider="ffz" data-id="457124" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:22</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@23</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:22</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span> <span class="message "><strong class="text">@23</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:22</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">just make a vscode extension that replaces keywords visually with the emote</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:22</span><span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">37</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">wth is this thread</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:22</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">maybe </span><span class="text" data-a-target="chat-message-text"> for anything atomic/parallel safe</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:22</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">but what about the vim chads </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:22</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">And then just use the preprocessor to replace the keywords </span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:23</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">vim </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:23</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">38</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">How is this still alive</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:23</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">exactly</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:23</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">We have our goal, that's doable. </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:23</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">there's just a build step that turns it back into functional code</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:24</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">god it's amazing. I love this so much</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:24</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">welp time to make a github repo</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:24</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">When working with pointers, you need to escape the pointer variable with W(ptrVar)-&gt;L(field)</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:24</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">38</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">I'm more of a Python guy </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:25</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@34</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:25</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">39</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Thanks for keeping it on-topic bois</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:25</span><span class="username" style="--color_light:rgb(0, 0, 255);--color_dark:rgb(120, 120, 255);">40</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">truly wonder when this thread will die</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:25</span>
+				<span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">33</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">just wait for copilot to start suggesting this for random people </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:25</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><strong class="text">@39</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:25</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">uhhhh lol not on my personal github, and I don't think you can make team accounts for free</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:26</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">41</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">hello long thread</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:26</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span> <span class="message "><strong class="text">@34</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:26</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">actually no I think it'll work</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:26</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">we need an org name</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">CodeMania™</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I'd suggest something with W2L</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I don't think everyone here will actually participate in the development</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:27</span>
+				<span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">7</span><span class="colon">: </span>
+				<span class="message "><img src="//cdn.frankerfacez.com/emote/418189/1" srcset="//cdn.frankerfacez.com/emote/418189/1 1x, //cdn.frankerfacez.com/emote/418189/2 2x, //cdn.frankerfacez.com/emote/418189/4 4x" alt="YEP" data-tooltip-type="emote" data-provider="ffz" data-id="418189" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I hate it. It's perfect</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">28</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">if we get enough contributors on this we can get intellij for freeeeeee</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:27</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">38</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">Are you on C++17 or 20?</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">do we have a discord? Or are we just using this thread for all comms</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">We're just gonna enforce the newest</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">23</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">unfortunately c++ 14</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">we should get a discord</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">W++ is then the project name right?</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:28</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><strong class="text">@34</strong><img src="//cdn.frankerfacez.com/emote/381875/1" srcset="//cdn.frankerfacez.com/emote/381875/1 1x, //cdn.frankerfacez.com/emote/381875/2 2x, //cdn.frankerfacez.com/emote/381875/4 4x" alt="KEKW" data-tooltip-type="emote" data-provider="ffz" data-id="381875" data-set="113107"></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">also, are we straight up just #define'</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">we should have a means of communicating that is not a twitch thread, but it feels wrong to move away from here</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:28</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I agree</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:29</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">I think it's time to mature. We can do this</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:29</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">maybe we make a QT IRC app that looks like switch chat</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:29</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">we could go back to the classic IRC</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:29</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">twitch*</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:30</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">34</span> <span class="colon">: </span> <span class="message "><strong class="text">@1</strong><span class="text" data-a-target="chat-message-text"> I think you should make the server, you seem to be the most prominent contributor to this</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:30</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">Alright, will do that</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:31</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">38</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">C++14 is ok though, I remember pre C++11 template metaprogramming, that was something else</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:32</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">pre C++11 range based for loops... oh wait</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:32</span><span class="username" style="--color_light:rgb(255, 127, 80);--color_dark:rgb(255, 127, 80);">26</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">random number generators aren't random</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:32</span>
+				<span class="username" style="--color_light:rgb(255, 109, 0);--color_dark:rgb(255, 109, 0);">11</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">nothing is truly random, but we can get close</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:32</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Alright, how do I get the invite link to anybody interested without breaking like 80 rules here </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:32</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">23</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">pre c++11 everything was a copy. long life to rvalue reference</span></span>
+			</div>
+			<div class="chat_line">
+				<span class="timestamp">22:32</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">maybe stay here 3 more hours so it's 48h thread </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:32</span><span class="username" style="--color_light:rgb(255, 105, 180);--color_dark:rgb(255, 105, 180);">14</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">getRandomNumber() { return 4; }</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span><span class="username" style="--color_light:rgb(102, 102, 102);--color_dark:rgb(131, 131, 131);">4</span><span class="colon">: </span> <span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">just print the id without url part</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><strong class="text">@1</strong></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">that's a great idea</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">1</span><span class="colon">: </span> <span class="message "><span class="text" data-a-target="chat-message-text">████████ is just a random string</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span><span class="username" style="--color_light:rgb(0, 0, 255);--color_dark:rgb(120, 120, 255);">42</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">c++ is chaotic</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">22:33</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">5</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">exactly</span></span>
+			</div>
+			<div class="bar_missing_messages">MISSING MESSAGES HERE</div>
+			<div class="chat_line"><span class="timestamp">2:34</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">this thread is now over 48h long </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:34</span><span class="username" style="--color_light:rgb(155, 0, 255);--color_dark:rgb(189, 88, 255);">43</span>
+				<span class="colon">: </span><span class="message "><img src="//cdn.frankerfacez.com/emote/210748/1" srcset="//cdn.frankerfacez.com/emote/210748/1 1x, //cdn.frankerfacez.com/emote/210748/2 2x" alt="Pog" data-tooltip-type="emote" data-provider="ffz" data-id="210748" data-set="113107"></span></div>
+			<div class="chat_line"><span class="timestamp">2:34</span><span class="username" style="--color_light:rgb(0, 0, 255);--color_dark:rgb(120, 120, 255);">44</span>
+				<span class="colon">: </span><span class="message "><img src="//cdn.frankerfacez.com/emote/210748/1" srcset="//cdn.frankerfacez.com/emote/210748/1 1x, //cdn.frankerfacez.com/emote/210748/2 2x" alt="Pog" data-tooltip-type="emote" data-provider="ffz" data-id="210748" data-set="113107"></span></div>
+			<div class="chat_line"><span class="timestamp">2:36</span><span class="username" style="--color_light:rgb(0, 0, 255);--color_dark:rgb(120, 120, 255);">44</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">This would now take about 5 minutes and 42 seconds to read. (according to a website called Read Time </span><span class="text" data-a-target="chat-message-text"> )</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:40</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">45</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">How many messages in this thread? </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:41</span>
+				<span class="username" style="--color_light:rgb(255, 138, 30);--color_dark:rgb(255, 138, 30);">46</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">best thread</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:41</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">and that is just the last 100 or so messages, i have archived 3530 messages and I'm missing quite a lot </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:41</span>
+				<span class="username" style="--color_light:rgb(0, 187, 255);--color_dark:rgb(0, 187, 255);">47</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">We can use this thread as a data set and do data science on it LOL</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:42</span><span class="username" style="--color_light:rgb(155, 0, 255);--color_dark:rgb(189, 88, 255);">43</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">use a Deep Neural Net for Regression on twitch users IQ </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:42</span><span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">48</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">its alive </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:42</span><span class="username" style="--color_light:rgb(0, 128, 0);--color_dark:rgb(0, 231, 0);">49</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">so what do you say about python</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:43</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">50</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">useful, but slow</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:44</span><span class="username" style="--color_light:rgb(155, 0, 255);--color_dark:rgb(189, 88, 255);">43</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">good for data science/ML/DL</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:48</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">51</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">keeping it alive</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:50</span><span class="username" style="--color_light:rgb(46, 139, 87);--color_dark:rgb(61, 185, 116);">52</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">cool language </span><span class="text" data-a-target="chat-message-text"> cant wait to write code again </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:51</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">53</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">WOOOOOOO YEAAAAAAAAA</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:53</span>
+				<span class="username" style="--color_light:rgb(228, 26, 68);--color_dark:rgb(235, 88, 118);">54</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">stay hydrated boys</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:54</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">53</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Shower takes 45 minutes</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:54</span><span class="username" style="--color_light:rgb(0, 255, 127);--color_dark:rgb(0, 255, 127);">55</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">whole map</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:54</span>
+				<span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">56</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">winke guys</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:55</span>
+				<span class="username" style="--color_light:rgb(138, 43, 226);--color_dark:rgb(170, 100, 234);">57</span><span class="colon">: </span>
+				<span class="message "><span class="text" data-a-target="chat-message-text">Winke</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:55</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">51</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">Winke</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:55</span><span class="username" style="--color_light:rgb(0, 0, 255);--color_dark:rgb(120, 120, 255);">44</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">winke</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">2:58</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">51</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">its 21 AM</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:04</span><span class="username" style="--color_light:rgb(255, 0, 0);--color_dark:rgb(255, 88, 88);">50</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">don't forget to let this thread alive peoples</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:04</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">3am CEST </span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:05</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">C++ thread still going</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:05</span><span class="username" style="--color_light:rgb(210, 105, 30);--color_dark:rgb(225, 118, 42);">45</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">going dark for today</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:06</span><span class="username" style="--color_light:rgb(30, 144, 255);--color_dark:rgb(53, 155, 255);">58</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">see you in two days!</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:07</span><span class="username" style="--color_light:rgb(218, 165, 32);--color_dark:rgb(218, 165, 32);">8</span>
+				<span class="colon">: </span><span class="message "><span class="text" data-a-target="chat-message-text">bye, I stoped archiving now o7 it's been a pleasure to chat with you about C++ o7</span></span>
+			</div>
+			<div class="chat_line"><span class="timestamp">3:07</span><span class="username" style="--color_light:rgb(0, 217, 255);--color_dark:rgb(0, 217, 255);">59</span>
+				<span class="colon">: </span><span class="message "><img src="//static-cdn.jtvnw.net/emoticons/v2/304645883/default/dark/1.0" srcset="//static-cdn.jtvnw.net/emoticons/v2/304645883/default/dark/1.0 1x, //static-cdn.jtvnw.net/emoticons/v2/304645883/default/dark/2.0 2x, //static-cdn.jtvnw.net/emoticons/v2/304645883/default/dark/3.0 4x" alt="wirt7" data-tooltip-type="emote" data-provider="twitch" data-id="304645883"></span>
+			</div>
+			<div class="bar_new_messages">POSSIBLY NEW MESSAGES HERE</div>
+		</div>
+	</div>
+</body>
+</html>
